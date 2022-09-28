@@ -1,6 +1,15 @@
 # SeminarioAngular
 Seminario de la carrera TUDAI dictado el año 2022
 
+## Qué va a cubrir este curso?
+    - Components & Templates
+    - Databinding
+    - Directives & Pipes
+    - Services & Dependency Injection
+    - Routing
+    - HTTPClient (consumir servicios web)
+    - Ademas de aprender Typescript!
+
 ## Comandos importantes
 - npm install -g @angular/cli (Instalacion en la carpeta donde vamos a desarrolar el proyecto)
 - npm install -g npm@8.19.2 (Actualizar version)
@@ -14,12 +23,31 @@ Seminario de la carrera TUDAI dictado el año 2022
     - La última versión de Node LTS es la 16.x
     - Para averiguar la version de angular es  "ng version"
 
-#### Qué tiene nuestro proyecto?
+### Qué es TypeScript?
+Angular está enteramente escrito en TypeScript (TS), y además propone este lenguaje como principal.
+<br></br>
+TypeScript extiende JavaScript agregando:
+- Tipos (string, number, boolean, etc)
+- Interfaces y Objetos basados en clases.
+
+
+### Qué tiene nuestro proyecto?
+#### Top Level
 El nivel superior del workspace contiene archivos de configuración y subcarpetas para los archivos fuente y de testing. Los más importantes son:
 - **angular.json** configuración de angular-cli default para el proyecto
 - **package.json** define las dependencias del proyecto
 - **src/ contiene** el código fuente del proyecto
 - **node_modules/** provee paquetes npm globales a todo el proyecto
 - **e2e/** contiene el código para testing end-to-end
+
+#### src folder
+Contiene todo el código fuente de nuestra aplicación. Los principales son:
+- **index.html** es la página HTML principal. Angular CLI agrega automáticamente todos los archivos JavaScript y CSS.
+- **app/** contiene la lógica y los datos del proyecto.
+- **assets/** contiene las imágenes y otros “assets” que se usan en la app
+- **environments/** contiene diferentes configuraciones de compilación
+- **style.scss** estilos css principales de la aplicación
+- **main.ts** punto de entrada principal de la aplicación
+
 
 
