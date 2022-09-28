@@ -51,7 +51,7 @@ Contiene todo el código fuente de nuestra aplicación. Los principales son:
 
 2. Clase 2
 
-##¿Qué son los componentes?
+## ¿Qué son los componentes?
 En esta clase vamos a entender que son los componentes de Angular, esa pieza fundamental en del desarrollo de aplicaciones web modernas.
 
 **Cambios al 2022**
