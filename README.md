@@ -50,9 +50,20 @@ Contiene todo el código fuente de nuestra aplicación. Los principales son:
 - **main.ts** punto de entrada principal de la aplicación
 
 2. Clase 2
+[Link CLASE](https://youtu.be/fO74AMjx2fk)
 
 ## ¿Qué son los componentes?
-En esta clase vamos a entender que son los componentes de Angular, esa pieza fundamental en del desarrollo de aplicaciones web modernas.
+Los componentes son la manera en que construimos apps en Angular, dividiendo la funcionalidad en pequeñas piezas que luego al unirlas construyen una vista de un usuario.
+- Cada parte de nuestro app va a ser un componente.
+- Son reutilizables :) 
+
+Un componente Angular está compuesto por tres partes:
+
+| TS | HTML | CSS |
+|--|--|--|
+| LOGICA | TEMPLATE | ESTILO |
+
+![Image](https://codigoonclick.com/wp-content/uploads/2018/03/conoce-angular-componentes.png)
 
 **Cambios al 2022**
 <br></br>
