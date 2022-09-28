@@ -49,5 +49,22 @@ Contiene todo el código fuente de nuestra aplicación. Los principales son:
 - **style.scss** estilos css principales de la aplicación
 - **main.ts** punto de entrada principal de la aplicación
 
+2. Clase 2
 
+##¿Qué son los componentes?
+En esta clase vamos a entender que son los componentes de Angular, esa pieza fundamental en del desarrollo de aplicaciones web modernas.
+
+**Cambios al 2022**
+<br></br>
+La última version de Bootstrap incluye un solo JS <https://getbootstrap.com/docs/5.2/getting-started/introduction/>.
+<br></br>
+**IMPORTANTE:** La última version de Typescript no permite propiedades de una clase sin inicializar. Es probable que se encuentren con algún error de compilación de este tipo: 
+<br></br>
+name: string;
+<br></br>
+"Property 'name' has no initializer and is not definitely assigned in the constructor.ts(2564)
+<br></br>
+Estos errores se pueden resolver de dos maneras:
+   - Asignado un valor a la propiedad en la definición o en el constructor
+   - Agregar la propiedad "strictPropertyInitialization": false  en el archivo de configuración de typescript (tsconfig.json) dentro de compilerOptions.
 
