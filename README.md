@@ -15,12 +15,11 @@ Seminario de la carrera TUDAI dictado el año 2022
     - Para averiguar la version de angular es  "ng version"
 
 #### Qué tiene nuestro proyecto?
-Top Level
 El nivel superior del workspace contiene archivos de configuración y subcarpetas para los archivos fuente y de testing. Los más importantes son:
-- angular.json configuración de angular-cli default para el proyecto
-- package.json define las dependencias del proyecto
-- src/ contiene el código fuente del proyecto
-- node_modules/ provee paquetes npm globales a todo el proyecto
-- e2e/ contiene el código para testing end-to-end
+- **angular.json** configuración de angular-cli default para el proyecto
+- **package.json** define las dependencias del proyecto
+- **src/ contiene** el código fuente del proyecto
+- **node_modules/** provee paquetes npm globales a todo el proyecto
+- **e2e/** contiene el código para testing end-to-end
 
 
