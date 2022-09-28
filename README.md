@@ -65,6 +65,12 @@ Un componente Angular está compuesto por tres partes:
 
 ![Image](https://codigoonclick.com/wp-content/uploads/2018/03/conoce-angular-componentes.png)
 
+Para poder cargar el componente, lo tenemos que declarar en el app.module.ts
+![Image](https://media.geeksforgeeks.org/wp-content/uploads/20200423180639/gfg_entrycomponent_1.png)
+
+### Interpolation
+- Las llaves {{ }} nos permiten usar propiedades definidas en el componente y mostrarlas en el template.
+
 **Cambios al 2022**
 <br></br>
 La última version de Bootstrap incluye un solo JS <https://getbootstrap.com/docs/5.2/getting-started/introduction/>.
