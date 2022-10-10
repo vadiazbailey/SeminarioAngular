@@ -91,5 +91,54 @@ El property binding nos permite relacionar componentes con propiedades del DOM.
     - Los corchetes le dicen a Angular que setee esta propiedad del elemento a la propiedad de nuestro componente.
     - Si la propiedad del componente cambia, entonces cambia el DOM.
 
+### Interfaces & Directivas
+
+#### Orientada a Objetos
+Uno de los principios básicos de TypeScript es la verificación de tipos.
+- Podemos usar tipos primitivos en variables:
+    - let name: string;
+    - let price: number;
+
+- Pero también podemos usar una interface para definir tipos de datos más complejos.
+
+#### Mocks
+Se le llama Mock a un objeto que simula el comportamiento del objeto real.
+- Es una buena práctica front-end usar ‘Fake Data’ para comenzar a desarrollar nuestra aplicación.
+- Eventualmente los datos vendrán de algun web service (API).
+- Se puede separar en un archivo. 
+
+## Directivas
+Es la forma de generar un template HTML dinámico.
+- Existen 2 tipos de directives:
+    - Estructural: Modifica el layout agregando, quitando o modificando elementos HTML. ( ejemplo *ngIf *ngFor)
+    - Atributos: Modifica la apariencia y el comportamiento de elementos que ya existen. En el template parecen atributos comunes de HTML. (ejemplo [ngStyle])
+***ngFor** La directiva *ngFor repite el elemento por cada item en la colección.
+***ngIf** La directiva *ngIf, elimina o muestra una parte del DOM de acuerdo a la expresión que evalúa.
+**ngClass** La directiva ngClass manipula las clases CSS de un elemento HTML
+        <tr *ngFor="let producto of productos" [ngClas]="{'clearence': beer.clearence}">
+Si beer.clearance es true, se le agrega la clase al elemento, si es false no.
+
+<some-element [ngClass]="'className1 'className2">
+…
+</some-element>
+
+<some-element [ngClass]="['className1', 'className2']">
+…
+</some-element>
+
+<some-element [ngClass]="{'className1': true, 'className2': false}">
+…
+</some-element>
+
+## Pipes
+Los **pipes** son simples funciones que transforman valores que usamos en un template.
+Angular tiene muchísimos *pipes* definidos, y además permite definir nuestros propios pipes.
+Podemos usar pipes en los templates para:
+- Formatear fechas
+- Mostrar monedas
+- Formatear números
+Entre otros
+
+
 
 
