@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+.nav-pills a.nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #8C114A;
+}
+
+a.nav-link {
+    color: #8C114A;
+}
+
+a.nav-link:hover, a.nav-link:focus , a.nav-link:active {
+    color: #A66A8B;
+}
+
+a.nav-link:hover{
+    background-color: #471531 !important;
+}
+
+/*Colors for the buttons*/
+.btn {
+    color: #fff;
+    background-color: #8C114A;
+    border-color: #8C114A;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #8C114A;
+    border-color: #8C114A;
+}
+
+.btn:first-child:hover, :not(.btn-check)+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #A66A8B;
+    border-color: #A66A8B;
+}
+
+footer {
+    background-color: #F2D8E6;
+    width: 95vw;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+footer a{
+    color: #8C114A;
+}
+
+footer h5 {
+    color: #8C114A;
+}
+
+footer p {
+    color: #8C8C8C;
+}
+
+header a img{
+    width: 30vw;
+    height: 35vh;
+}
+
+footer img {
+    width: 25vw;
+    height: 40vh;
+}
+
+li.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100vw;
+    margin: 0 auto;
+}
