@@ -85,3 +85,11 @@ Estos errores se pueden resolver de dos maneras:
    - Asignado un valor a la propiedad en la definición o en el constructor
    - Agregar la propiedad "strictPropertyInitialization": false  en el archivo de configuración de typescript (tsconfig.json) dentro de compilerOptions.
 
+### Property Binding
+El property binding nos permite relacionar componentes con propiedades del DOM.
+    - Usamos corchetes [] en lugar de llaves {}.
+    - Los corchetes le dicen a Angular que setee esta propiedad del elemento a la propiedad de nuestro componente.
+    - Si la propiedad del componente cambia, entonces cambia el DOM.
+
+
+
