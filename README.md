@@ -167,6 +167,12 @@ import { FormsModule } from '@angular/forms'
 - Implementa el famoso “partial render”
 - Angular se ocupa de cambiar la URL en la barra de direcciones y actualizar el DOM sin refrescar.
 
+### Router Outlet
+Usando el tag <router-outlet> indicamos donde queremos que Angular muestre los componentes.
+    
+Para armar links que naveguen usando el router tenemos que agregarle 2 directivas
+routerLink: Que es la Dirección a donde vamos. Ej: ‘/’ o ‘/about’
+<a [routerLink]="['/abouts']">Contactenos </a>
 
 
 
