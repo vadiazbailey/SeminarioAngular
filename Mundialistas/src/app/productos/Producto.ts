@@ -4,4 +4,5 @@
     imagen: string;
     descripcion: string;
     stock: number;
+    cantidad: number;
 }
