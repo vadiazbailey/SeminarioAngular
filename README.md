@@ -139,6 +139,40 @@ Podemos usar pipes en los templates para:
 - Formatear números
 Entre otros
 
+## Event Binding
+El event binding es la forma de comunicar lo que pasa en HTML a Javascript.
+Hay 3 formas:
+1. Javascript a HTML
+Como venimos haciendo, por ejemplo un título o las cervezas.
+2. HTML a Javascript
+Como un mouse click, hover, input, key press.
+3. De las dos formas (Two-Way data binding)
+Por ejemplo un input que tiene que estar sincronizado con el dato del componente.
+
+### Two-Way Data Binding
+Nos permite compartir información entre el componente y el template en ambas direcciones.
+- Mantenemos sincronizados (sync) el template y el componente.
+- Se utiliza medianta el uso de la sintaxis [()], conocida como “Banana in a Box”, Este tipo de binding se usa en inputs, donde queremos matener en sync el valor del input con la propiedad en el componente. 
+- Importar Forms Module en app.module
+import { FormsModule } from '@angular/forms'
+...
+ imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+  ],
+
+## Routing en Angular
+- Permite asociar cada URL a un componente
+- Implementa el famoso “partial render”
+- Angular se ocupa de cambiar la URL en la barra de direcciones y actualizar el DOM sin refrescar.
+
+### Router Outlet
+Usando el tag <router-outlet> indicamos donde queremos que Angular muestre los componentes.
+    
+Para armar links que naveguen usando el router tenemos que agregarle 2 directivas
+routerLink: Que es la Dirección a donde vamos. Ej: ‘/’ o ‘/about’
+<a [routerLink]="['/abouts']">Contactenos </a>
 
 
 
