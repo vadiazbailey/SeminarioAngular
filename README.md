@@ -174,5 +174,7 @@ Para armar links que naveguen usando el router tenemos que agregarle 2 directiva
 routerLink: Que es la Dirección a donde vamos. Ej: ‘/’ o ‘/about’
 <a [routerLink]="['/abouts']">Contactenos </a>
 
-
-
+Para comunicar componentes, Angular propone varias formas:
+- @Input: binding de una propiedad del componente
+- @Output: hookearse a los eventos de otro componente
+- Comunicación por medio de un servicio.
