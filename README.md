@@ -17,6 +17,8 @@ Seminario de la carrera TUDAI dictado el año 2022
 -  ng new [nombre-de-la-app] (Crea la aplicacion)
     -ng new brewery --routing=true --style=scss (Example)
 - ng serve (Corre la app Angular en un servidor local, http://localhost:4200/)
+- ng generate service BeerCart (ng g s BeerCart)
+
 
 1. Clase 1:
     - La última versión de angular es la 14.x
