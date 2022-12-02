@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, tap } from 'rxjs';
 import { Producto } from './productos/Producto';
 import { ProductosComponent } from './productos/productos.component';
 
@@ -18,6 +18,14 @@ export class ProductosDataService {
    */
 
   public getProductos(): Observable<Producto[]> {
-    return this.http.get<Producto[]>(URL+'/productos');
+    return this.http.get<Producto[]>(URL+'/productos')
+                                    .pipe(
+                                      tap((productos: Producto[]) => {
+                                        productos.forEach((producto: Producto) => {
+                                          producto.cantidad = 0;
+                                        })
+                                      }
+                                    )
+                                  );
   }
 }
