@@ -22,14 +22,10 @@
                 </span>
             </td>
             <td width="110px">
-                <div class="input-group">
-                    <button type="button" class="btn btn-outline-danger btn-sm" (click)="quitarDelCarrito(producto)">-</button>
-                    <input type="text" class="text-center" [(ngModel)]="producto.cantidad" (change)="cambiarCantidad($event, producto)"
-                        style="width: 35px; display: inline-block;">
-                    <button type="button" class="btn btn-outline-danger  btn-sm" (click)="agregarAlCarrito(producto)">+</button>
-                </div>
-
-                {{producto.cantidad}}
+                <app-input-carrito *ngIf="producto.stock>0" [(cantidad)]="producto.cantidad" [stock]="producto.stock"></app-input-carrito>
+            </td>
+            <td>
+                <button class="btn btn-primary" *ngIf="producto.stock>0" (click)="addToCart(producto)">Comprar</button>
             </td>
         </tr>
     </tbody>

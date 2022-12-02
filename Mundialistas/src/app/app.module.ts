@@ -9,6 +9,8 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { InputCarritoComponent } from './input-carrito/input-carrito.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { AboutComponent } from './about/about.component';
     ContactoComponent,
     CarritoComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    InputCarritoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,35 @@
-<p>carrito works!</p>
+<!-- <ul>
+    <li *ngFor="let item of carro$ |async">
+        {{item.nombre}} : {{item.cantidad}}
+    </li>
+</ul> -->
+
+<!--tABLA DE LAS COMPRAS DEL CARRITO -->
+<div class="compras">
+    <h1>Compras</h1>
+    <table class="table text-center">
+        <thead class="table-light">
+            <tr>
+                <th  scope="col">Imagen</th>
+                <th  scope="col">Nombre</th>
+                <th  scope="col">Cantidad</th>
+                <th  scope="col">Precio</th>
+                <th  scope="col">Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of carro$ |async">
+                <td><img [src]="item.imagen" width="50px"></td>
+                <td>{{item.nombre}}</td>
+                <td>{{item.cantidad}}</td>
+                <td>{{item.precio | currency}}</td>
+                <td>{{item.cantidad * item.precio | currency}}</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="text-end">Total</td>
+                <td class="table-active">{{total$ | async | currency}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

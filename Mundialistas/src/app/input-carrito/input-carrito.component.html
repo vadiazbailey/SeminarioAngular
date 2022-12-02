@@ -1,0 +1,6 @@
+<div class="input-group">
+    <button type="button" class="btn btn-outline-danger btn-sm" (click)="quitarDelCarrito()">-</button>
+    <input type="text" class="text-center" [(ngModel)]="cantidad" (change)="cambiarCantidad($event)"
+        style="width: 35px; display: inline-block;">
+    <button type="button" class="btn btn-outline-danger  btn-sm" (click)="agregarAlCarrito()">+</button>
+</div>
